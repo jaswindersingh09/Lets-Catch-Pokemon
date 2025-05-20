@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  max-height: 100vh;
+  background-color: lightblue;
+}
+
+.container{
+  max-width: 105rem;
+  margin: 0 auto; 
+  padding-bottom: 1rem;
+  /* border: 5px solid yellow; */
+} 
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  list-style: none;
+  margin: 5rem 0;
+}
+.pokemon-card{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  transition: all 0.3s linear;
+}
+header h1{
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-transform: capitalize;
+}
+.input{
+  text-align: center;
+}
+.input input{
+  width: 300px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid red;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+figure{
+  display: flex;
+  justify-content: center;
+}
+figure img{
+  margin-top: 10px;
+  width: 125px;
+  height: 125px;
+}
+.pokemon-card h2{
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 0.7rem;
+  text-align: center;
+}
+.pokemon-card:hover{
+  transform: scale(1.08);
+}
+.pokemon-type{
+  display: flex;
+  justify-content: center;
+}
+.pokemon-type p{
+  width: 12rem;
+  background-color: green;
+  color: white;
+  padding: 0.4em 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 3rem;
+  text-align: center;
+  margin-top: 0.7rem;
+}
+.grid-col-3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 1.5rem;
+  text-align: center;
+}
+.pokemon-info span{
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+.pokemon-info{
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: auto;
+}
+.pokemon-info p{
+  font-size: 1.5rem;
+  text-align: center;
+}
+.grid-col-3 span{
+  font-size: 1.5rem;
+  font-weight: 600;
+} 
+
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.loading h1{
+  font-size: 3rem;
+}
